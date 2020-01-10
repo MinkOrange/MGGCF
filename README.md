@@ -36,13 +36,16 @@ We provide two processed datasets: CAMRa2011 and Movielens-Simi.
 group(user)RatingTrain.:
 + Train file.
 + Each Line is a training instance: groupID(userID)\t itemID\t rating\t timestamp (if have)
+
 group(user)RatingTest:
 + group(user) Test file (positive instances).
 + Each Line is a testing instance: groupID(userID)\t itemID\t rating\t timestamp (if have)
+
 group(user)RatingNegative
 + group(user) Test file (negative instances).
 + Each line corresponds to the line of test.rating, containing 100 negative samples.
 + Each line is in the format: (groupID(userID),itemID)\t negativeItemID1\t negativeItemID2 ...
+
 groupMember
 + group member file
 + Each line is a group information: groupID\t userID1 \t userID2 ...
