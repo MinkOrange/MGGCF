@@ -1,9 +1,4 @@
-'''
-Created on Nov 10, 2017
-Deal something
 
-@author: Lianhai Miao
-'''
 import torch
 from torch.autograd import Variable
 import numpy as np
