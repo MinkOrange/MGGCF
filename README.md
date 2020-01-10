@@ -13,6 +13,7 @@ The  MGGCF code has been tested running under Python 3.6. The required packages 
 + numpy == 1.14.3
 + scipy == 1.1.0
 + sklearn == 0.19.1
+
 The AGREE and NeuMF baselines code are based on pytorch framework.
 + pytorch version: '0.3.0'
 + python version: '3.5'
