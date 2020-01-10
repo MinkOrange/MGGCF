@@ -28,6 +28,15 @@ run MGGCF:
 ```
 python MGGCF.py
 ```
+the value of HR and NDCG in the test dataset will be printed in command window after each optimization iteration.Like:
+```
+Epoch 0 [51.9s]: train==[285.65265=81.19891 + 204.45381]
+Epoch 0 [51.9s + 216.7s]: train==[285.65265=81.19891 + 204.45381], g_hit=[0.92033], g_ndcg=[0.58268], u_hit=[0.53179], u_ndcg=[0.29446]
+Epoch 1 [42.9s]: train==[190.82164=33.28221 + 157.53944]
+Epoch 1 [42.9s + 205.2s]: train==[190.82164=33.28221 + 157.53944], g_hit=[0.93200], g_ndcg=[0.59525], u_hit=[0.56358], u_ndcg=[0.31497]
+```
+After trainging process, the best result will be printed in command window like this:
+
 ## Parameter Tuning
 we put all the parameters in the config.py for AGREE and NeuMF.
 and we put all the parameters in the parser.py for MGGCF.
