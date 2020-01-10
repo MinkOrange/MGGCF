@@ -1,9 +1,3 @@
-'''
-Created on Nov 10, 2017
-Store parameters
-
-@author: Lianhai Miao
-'''
 
 class Config(object):
     def __init__(self):
