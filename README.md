@@ -36,7 +36,9 @@ Epoch 1 [42.9s]: train==[190.82164=33.28221 + 157.53944]
 Epoch 1 [42.9s + 205.2s]: train==[190.82164=33.28221 + 157.53944], g_hit=[0.93200], g_ndcg=[0.59525], u_hit=[0.56358], u_ndcg=[0.31497]
 ```
 After trainging process, the best result will be printed in command window like this:
-
+```
+Best Iter=[8]@[7223.4]	g_hit=[0.98000], g_ndcg=[0.66206], u_hit=[0.68825], u_ndcg=[0.39949]
+```
 ## Parameter Tuning
 we put all the parameters in the config.py for AGREE and NeuMF.
 and we put all the parameters in the parser.py for MGGCF.
