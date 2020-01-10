@@ -1,9 +1,3 @@
-'''
-Created on Nov 10, 2017
-Create Model
-
-@author: Lianhai Miao
-'''
 
 import torch
 import torch.nn as nn
