@@ -10,7 +10,7 @@ def parse_args():
                         help='Project path.')
 
     parser.add_argument('--dataset', nargs='?', default='ml-1m',
-                        help='Choose a dataset from {CAMRa2011, MeetUp, ml-1m}')
+                        help='Choose a dataset from {CAMRa2011, ml-1m}')
     parser.add_argument('--pretrain', type=int, default=0,
                         help='0: No pretrain, -1: Pretrain with the learned embeddings, 1:Pretrain with stored models.')
     parser.add_argument('--verbose', type=int, default=1,
@@ -42,10 +42,10 @@ def parse_args():
     parser.add_argument('--node_dropout', nargs='?', default='[0,0,0]',
                         help='Keep probability w.r.t. node dropout (i.e., 1-dropout_ratio) for each deep layer. 1: no dropout.')
 
-    parser.add_argument('--mess_dropout', nargs='?', default='[0,0,0]',
+    parser.add_argument('--mess_dropout', nargs='?', default='[0.2,0.2,0.2]',
                         help='Keep probability w.r.t. message dropout (i.e., 1-dropout_ratio) for each deep layer. 1: no dropout.')
 
-    parser.add_argument('--K', nargs='?', default= 3,
+    parser.add_argument('--K', nargs='?', default= 5,
                         help='top-K')
 
     parser.add_argument('--save_flag', type=int, default=1,
