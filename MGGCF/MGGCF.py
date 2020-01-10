@@ -11,8 +11,6 @@ class MGGCF(object):
     def __init__(self,data_config,pretrain_data):
         # argument settings
         self.model_type = 'MGGCF'
-        self.adj_type = args.adj_type  # the type of the adjacency (laplacian) matrix
-        self.alg_type = args.alg_type  #The type of the graph convolutional layer
 
         self.pretrain_data = pretrain_data
 
@@ -35,8 +33,7 @@ class MGGCF(object):
         self.weight_size = eval(args.layer_size)  #Output sizes of every layer[64,64,64]
         self.n_layers = len(self.weight_size)    #3
 
-        self.alg_type = args.alg_type
-        self.model_type += '_%s_%s_l%d'%(args.adj_type,args.alg_type,self.n_layers)
+        self.model_type += '_l%d'%(self.n_layers)
 
         self.regs = eval(args.regs)
         self.decay = self.regs[0]  #Regularizations hyperparameter
