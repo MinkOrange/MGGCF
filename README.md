@@ -28,6 +28,8 @@ run MGGCF:
 ```
 python MGGCF.py
 ```
+For MGGCF method,
+
 the value of HR and NDCG in the test dataset will be printed in command window after each optimization iteration.Like:
 ```
 Epoch 0 [51.9s]: train==[285.65265=81.19891 + 204.45381]
